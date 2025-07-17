@@ -24,4 +24,4 @@ export const GET = HttpApp.toWebHandlerRuntime(runtime)(
       })
     )
   )
-);
+) as (request: Request) => Promise<Response>
