@@ -9,6 +9,7 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@effect/platform": "^0.88.1",
     "effect": "^3.16.16",
     "next": "15.4.1",
     "react": "19.1.0",
