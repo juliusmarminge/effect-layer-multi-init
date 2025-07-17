@@ -10,7 +10,7 @@ const managedRuntime = ManagedRuntime.make(layerLive);
 const runtime = await managedRuntime.runtime();
 
 const app = Effect.gen(function* () {
-  yield* DatabaseService.execute("SELECT 1");
+  yield* DatabaseService.execute("SELECT 1 FROM two");
 
   return yield* HttpServerResponse.json({ ok: true });
 });
